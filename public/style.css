@@ -75,3 +75,30 @@ section{
 #the-canvas{
     margin-left: 3px;
 }
+#liste_contact{
+    list-style-type: none;
+   
+}
+.email{
+    vertical-align: middle;
+    display: inline-block;
+}
+.ad_email{
+    margin-left: 0.25em;
+    font-family: Comic Sans, Comic Sans MS, cursive;
+    font-weight: bold;
+}
+a:link{
+    color: gray;
+}
+a:visited {
+    color: gray;
+}
+a:hover{
+    color:black;
+}
+ul#liste_contact li{
+    display: inline;
+    padding: 0 1em;
+}
+
