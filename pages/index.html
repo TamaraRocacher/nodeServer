@@ -1,10 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
+    <meta name=viewport content="width=device-width" />
     <meta charset="utf-8"/>
     <title> Accueil </title>	
     <link rel="stylesheet" type="text/css" href="style.css">
   </head>
+
   <body>
     <div id="bloc_page">
       <header>
@@ -18,24 +20,26 @@
 	    <li> Accueil</li>
 	    <li><a href="/cv"> CV</a></li>
 	    <li> <a href="/contact">Contact</a></li>
-	    <li> Projets</li>	
+	     <li><a href="/projet"> Projets</a></li>	
 	  </ul>
 	</nav>
       </header>
+
       <section>
 	<article>
 	  <h1> Pr&eacutesentation</h1>
-	  <p> Etudiante en 3&egraveme ann&eacutee de licence Informatique, je suis passionn&eacutee de domotique et d'automatisation
-	    .  J'ai &eacutetudi&eacute la m&eacutecanique et les automatismes industriels en BTS , m'apportant mes premi&egraveres notions en informatique
-	    , apr&egraves un Baccalaur&eacuteat en Sciences de l'Ing&eacutenieur.
+	  <p> Etudiante en 3&egraveme ann&eacutee de licence Informatique, je suis passionn&eacutee de domotique et d'automatisation.  J'ai &eacutetudi&eacute la m&eacutecanique et les automatismes industriels en BTS, ce qui m'a apport&eacute mes premi&egraveres notions en informatique, apr&egraves un Baccalaur&eacuteat en Sciences de l'Ing&eacutenieur.
+	  </p>
+	  <p>
+	    C'est donc naturellement que je me suis tournée vers l'informatique, et plus particuli&egraverement la programmation. Mon premier projet de groupe, en deuxi&egraveme année de licence, m'a permis d'orienter mon parcours vers la gestion de projet informatique.
 	  </p>
 	</article>
 	<aside>
 	  <h2> Identit&eacute</h2>
 	  <ul>
-	    <li> 24 ans</li>
-	    <li> permis B</li>
+	    <li id="age" > 24 ans</li>
 	    <li> Montpellier</li>
+	     <li> permis B</li>
 	  </ul>
 	</aside>
       </section>
@@ -48,5 +52,19 @@
 	</ul>
       </aside>-->
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" >
+      var dateString = "1991-11-11";
+      var birthday = new Date(dateString);
+      
+      function calculateAge(birthday){
+      var ageDifMs = Date.now()- birthday.getTime();
+      var ageDate =  new Date(ageDifMs);
+      return Math.abs(ageDate.getUTCFullYear()-1970);
+      }
+      var age = calculateAge(birthday);
+      $('#age').replaceWith('<li id="age">'+age.toString()+' ans </li>');
+    </script>
+
   </body>
 </html>

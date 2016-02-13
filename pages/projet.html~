@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name=viewport content="width=device-width">
+    <meta charset="utf-8"/>
+    <title> Accueil </title>	
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <div id="bloc_page">
+      <header>
+	<div id="titre_principal">
+	  <h1> Tamara Rocacher </h1>
+	  <h2> Etudiante en Informatique </h2>
+	</div>
+	
+	<nav>
+	  <ul>
+	    <li><a href="/"> Accueil</a></li>
+	    <li><a href="/cv"> CV</a></li>
+	    <li> <a href="/contact">Contact</a></li>
+	    <li> Projets</li>	
+	  </ul>
+	</nav>
+      </header>
+      <section id="projetun">
+	<article>
+	  <h1>Contrôler sa maison avec un Raspberry Pi</h1>
+	  <p>Ce projet de troisi&egraveme année de licence consiste en l'impl&eacutementation d'un programme qui permettra de contrôler les différents composants électriques d'une maison, ind&eacutependemment ou selon certains modes pr&eacuted&eacutefinis.</p>
+	  <p>Ce sujet est pour moi une réelle opportunit&eacute de d&eacutecouvrir la domotique et d'exploiter mes acquis en &eacutelectronique. J'ai donc souhait&eacute travailler sur un mod&egravele concret, en r&eacutealisant une maquette de maison &agrave contrôler.</p>
+	  <p>
+	    <img id="imgmaquette" src="/images/maquette1.jpg" alt="Maquette" title="Maquette" />
+	  </p>
+	</article>
+      </section>
+      
+    </div>
+  </body>
+</html>
